@@ -1,10 +1,10 @@
 {
     "name": "real-time-chat-with-grpc",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "proto:gen": "./proto-gen.sh",
+      "proto": "npx proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=proto/ proto/*.proto",
       "start": "ts-node server",
       "client": "ts-node client"
     },
