@@ -1,10 +1,10 @@
 // Original file: proto/random.proto
 
 
-export interface PingRequest {
+export interface ChatRequest {
   'message'?: (string);
 }
 
-export interface PingRequest__Output {
+export interface ChatRequest__Output {
   'message'?: (string);
 }

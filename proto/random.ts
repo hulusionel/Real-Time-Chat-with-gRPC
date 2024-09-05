@@ -9,8 +9,8 @@ type SubtypeConstructor<Constructor extends new (...args: any) => any, Subtype> 
 
 export interface ProtoGrpcType {
   randomPackage: {
-    PingRequest: MessageTypeDefinition
-    PongResponse: MessageTypeDefinition
+    ChatRequest: MessageTypeDefinition
+    ChatResponse: MessageTypeDefinition
     Random: SubtypeConstructor<typeof grpc.Client, _randomPackage_RandomClient> & { service: _randomPackage_RandomDefinition }
   }
 }
